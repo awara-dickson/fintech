@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+.default-container {
+  @apply  max-w-3xl lg:max-w-5xl xl-custom:max-w-6xl xl:max-w-6xl 2xl:max-w-7xl ml-auto mx-auto px-5 xl:px-0;   
+}
+.br-transition {
+  @apply transition ease-in duration-200;
+}
+.link{
+  @apply hover:text-customYellow br-transition;
+}
+.btn-one {
+  @apply bg-customGreen hover:bg-customYellow ring-1 ring-white  hover:text-customGreen text-white px-6 py-2 rounded-full inline-block br-transition
+}
+.btn-two {
+  @apply bg-customYellow hover:bg-customGreen hover:ring-1 hover:ring-white hover:text-customYellow text-customGreen px-6 py-2 rounded-full inline-block br-transition 
+}
+.btn-three{
+  @apply bg-customGreen text-white py-2 px-4 hover:text-customYellow rounded-md
+}
+}
+
